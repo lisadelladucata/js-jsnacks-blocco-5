@@ -19,5 +19,16 @@ const students = [
   },
 ];
 
+const marco = students.filter(students => students.name === 'Marco Lanci');
+
+let marcoClass;
+
+if (marco.length > 0) {
+  marcoClass = marco[0].class;
+} else {
+  marcoClass = null;
+}
+
+console.log(marcoClass);
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
